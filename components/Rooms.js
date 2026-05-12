@@ -12,6 +12,9 @@ const rooms5 = "/images/non-deluxroom2.jpg.png";
 const rooms6 = "/images/non-deluxroom3.jpg.png";
 const Tripplebed1 = "/images/tripplebed.jpg.png";
 
+/**
+ * @param {{ limit?: number | null }} props
+ */
 const Rooms = ({ limit = null }) => {
   const [filter, setFilter] = useState("All");
 
