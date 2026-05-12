@@ -1,0 +1,50 @@
+.activeLink {
+  color: #20b2aa !important;
+  font-weight: 600;
+}
+
+.navLink {
+  letter-spacing: 1px;
+  font-size: 15px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  color: #666 !important;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: #20b2aa !important;
+}
+
+.customToggler {
+  border: 2px solid #555 !important;
+  border-radius: 8px;
+}
+
+.mobileBookBtn {
+  background-color: #1a1a1a;
+  color: white !important;
+  padding: 12px 40px;
+  display: inline-block;
+  width: 80%;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.customBtn {
+  background-color: lightseagreen;
+  color: white;
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .navbarCollapse {
+    padding-bottom: 20px;
+  }
+}
