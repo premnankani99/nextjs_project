@@ -21,7 +21,7 @@ const Amenities = () => {
       <h2 className="text-center mb-5" style={{ letterSpacing: "3px", fontWeight: "500" }}>Our Hotel Amenities</h2>
       <p style={{ 
         fontSize: "15px", 
-        color: "#555", 
+        color: "#444", 
         textAlign: "center", 
         maxWidth: "750px", 
         margin: "0 auto 30px" 
@@ -43,7 +43,7 @@ const Amenities = () => {
                 />
               </div>
               <h5 style={{ color: "black" }}>{item.title}</h5>
-              <p className="text-muted small">{item.desc}</p>
+              <p style={{ color: "#444", fontSize: "13px" }}>{item.desc}</p>
             </div>
           </div>
         ))}

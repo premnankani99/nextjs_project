@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className="py-5" style={{ background: "LightSeaGreen", color: "white" }}>
       <div className="container">
         <div className="row align-items-center">
-          
-         
+
+
           <div className="col-md-4 text-center text-md-start">
             <h2 style={{ letterSpacing: "6px", fontWeight: "300", margin: "0", color: "white" }}>
               ANANTA INN
@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
           </div>
 
-       
+
           <div className="col-md-4 text-center">
             <div style={{ fontSize: "14px", fontWeight: "400", color: "rgba(255,255,255,0.9)" }}>
               <p className="mb-1 fw-semibold">Lal Kothi, Tonk Road Near Motisons Jewllers showroom, Jaipur</p>
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
 
-          
+
           <div className="col-md-4 text-center text-md-end mt-4 mt-md-0">
             <div style={{ display: "flex", justifyContent: "center", gap: "20px", justifyContent: "md-end" }}>
               <a href="https://facebook.com" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
@@ -44,7 +44,7 @@ const Footer = () => {
 
         </div>
 
-      
+
         <div className="mt-5 pt-4" style={{ borderTop: "1px solid rgba(255,255,255,0.2)", display: "flex", justifyContent: "space-between", fontSize: "11px", color: "rgba(255,255,255,0.7)", letterSpacing: "1px" }}>
           <span>© 2026 ANANTA INN</span>
           <span style={{ textTransform: "uppercase" }}>Handcrafted Experience</span>

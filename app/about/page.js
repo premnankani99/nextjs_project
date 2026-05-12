@@ -12,11 +12,11 @@ export default function AboutPage() {
       <section className="py-5" style={{ backgroundColor: "#fff", color: "#1a1a1a" }}>
         <div className="container py-5">
           <div className="row align-items-center">
-            
+
             {/* Image Column */}
             <div className="col-lg-6 mb-5 mb-lg-0">
               <div className="position-relative p-3">
-                <div 
+                <div
                   style={{
                     position: "absolute",
                     top: "0",
@@ -25,19 +25,19 @@ export default function AboutPage() {
                     height: "90%",
                     border: "2px solid #c5a059",
                     zIndex: "1",
-                    transform: "translate(-20px, -20px)" 
+                    transform: "translate(-20px, -20px)"
                   }}
                 ></div>
-                
+
                 <div className="position-relative" style={{ height: "450px", zIndex: "2" }}>
-                  <Image 
-                    src="/images/terace.jpg.png" 
-                    alt="Hotel Ananta Inn" 
+                  <Image
+                    src="/images/terace.jpg.png"
+                    alt="Hotel Ananta Inn"
                     fill
-                    style={{ 
+                    style={{
                       objectFit: "cover",
                       boxShadow: "20px 20px 60px rgba(0,0,0,0.15)",
-                      borderRadius: "2px" 
+                      borderRadius: "2px"
                     }}
                   />
                 </div>
@@ -51,7 +51,7 @@ export default function AboutPage() {
                   Est. 2015
                 </span>
                 <h2 className="display-5 fw-bold mb-3" style={{ fontFamily: "serif", letterSpacing: "-1px" }}>
-                  The Art of Luxury <br /> 
+                  The Art of Luxury <br />
                   <span style={{ color: "#c5a059" }}>Hospitality</span>
                 </h2>
                 <div style={{ width: "80px", height: "1px", backgroundColor: "#c5a059" }}></div>

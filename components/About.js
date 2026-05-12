@@ -19,7 +19,7 @@ const About = () => {
           THE INN EXPERIENCE
         </p>
         <div style={{ width: "40px", height: "2px", backgroundColor: "#b19470", margin: "20px auto" }}></div>
-        <p style={{ fontSize: "16px", color: "#555", lineHeight: "1.8", textAlign: "center", maxWidth: "750px", margin: "25px auto 0" }}>
+        <p style={{ fontSize: "16px", color: "#444", lineHeight: "1.8", textAlign: "center", maxWidth: "750px", margin: "25px auto 0" }}>
           Ananta Inn is a comfortable hotel in Lal Kothi Jaipur offering well-furnished rooms, modern amenities, and excellent hospitality.
         </p>
       </div>

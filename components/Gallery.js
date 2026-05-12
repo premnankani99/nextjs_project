@@ -25,7 +25,7 @@ const Gallery = () => {
               <Image src="/images/reception.jpg.png" alt="Reception" fill style={{ objectFit: "cover", borderRadius: "4px" }} />
             </div>
           </div>
-          
+
           <div className="col-lg-4">
             <div className="position-relative mb-3" style={{ height: "250px" }}>
               <Image src="/images/restro.jpg.png" alt="Restaurant" fill style={{ objectFit: "cover", borderRadius: "4px" }} />

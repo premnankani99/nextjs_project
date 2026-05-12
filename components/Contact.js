@@ -17,13 +17,13 @@ const Contact = () => {
           {/* Map Column */}
           <div className="col-lg-6">
             <div style={{ height: "450px" }}>
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.410769399435!2d75.8017993752236!3d26.89045087665977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db4272f9e1efd%3A0xc1a279eecf93c768!2sHotel%20Ananta%20Inn!5e0!3m2!1sen!2sin!4v1715482306789!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen="" 
-                loading="lazy" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.410769399435!2d75.8017993752236!3d26.89045087665977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db4272f9e1efd%3A0xc1a279eecf93c768!2sHotel%20Ananta%20Inn!5e0!3m2!1sen!2sin!4v1715482306789!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
@@ -33,10 +33,10 @@ const Contact = () => {
           <div className="col-lg-6" style={{ backgroundColor: "#20b2aa", color: "white" }}>
             <div className="p-5">
               <h4 className="mb-5 fw-bold border-bottom pb-3" style={{ borderBottomColor: "rgba(255,255,255,0.2) !important" }}>Contact Info</h4>
-              
+
               <div className="d-flex mb-4">
-                <div 
-                  className="rounded-circle bg-dark d-flex align-items-center justify-content-center" 
+                <div
+                  className="rounded-circle bg-dark d-flex align-items-center justify-content-center"
                   style={{ width: "40px", height: "40px", flexShrink: 0 }}
                 >
                   <i className="ri-phone-fill text-white"></i>
@@ -49,8 +49,8 @@ const Contact = () => {
               </div>
 
               <div className="d-flex mb-4">
-                <div 
-                  className="rounded-circle bg-dark d-flex align-items-center justify-content-center" 
+                <div
+                  className="rounded-circle bg-dark d-flex align-items-center justify-content-center"
                   style={{ width: "40px", height: "40px", flexShrink: 0 }}
                 >
                   <i className="ri-mail-fill text-white"></i>
@@ -62,8 +62,8 @@ const Contact = () => {
               </div>
 
               <div className="d-flex mb-4">
-                <div 
-                  className="rounded-circle bg-dark d-flex align-items-center justify-content-center" 
+                <div
+                  className="rounded-circle bg-dark d-flex align-items-center justify-content-center"
                   style={{ width: "40px", height: "40px", flexShrink: 0 }}
                 >
                   <i className="ri-map-pin-2-fill text-white"></i>

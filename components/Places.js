@@ -41,7 +41,7 @@ const Places = () => {
 
   return (
     <>
-      <style>{`
+      <style jsx>{`
         .places-section { 
           background-color: #ffffff; 
           padding: 60px 0; 
@@ -61,19 +61,19 @@ const Places = () => {
         }
 
         .places-header .subtitle {
-          color: #c59252;
+          color: #8b6e40;
           text-transform: uppercase;
           letter-spacing: 6px; 
-          font-size: 12px;
+          font-size: 13px;
           font-weight: 700;
           margin-bottom: 12px;
           display: block;
         }
 
         .places-header h2 { 
-          font-family: 'Playfair Display', serif;
+          font-family: serif;
           font-size: 3rem;
-          font-weight: 300; 
+          font-weight: 700; 
           color: #1a1a1a; 
           text-transform: capitalize;
           letter-spacing: 1px;
@@ -82,7 +82,7 @@ const Places = () => {
 
         .places-header h2 span {
           font-style: italic;
-          color: #b19470;
+          color: #8b6e40;
           font-weight: 500;
           margin-left: 10px;
         }
@@ -100,35 +100,23 @@ const Places = () => {
           content: '';
           width: 80px;
           height: 1px;
-          background: linear-gradient(to right, transparent, #b19470, transparent);
+          background: #8b6e40;
         }
 
         .gold-divider i {
-          color: #b19470;
+          color: #8b6e40;
           font-size: 20px;
-          animation: goldGlow 2.5s infinite ease-in-out;
         }
 
         .places-header p.description { 
-          color: #666; 
+          color: #444; 
           letter-spacing: 1px; 
           font-size: 16px; 
           max-width: 650px;
           margin: 0 auto;
           font-style: italic;
           line-height: 1.6;
-          font-weight: 300;
-        }
-
-        @keyframes goldGlow {
-          0% { transform: scale(1); opacity: 0.4; text-shadow: 0 0 0px #b19470; }
-          50% { transform: scale(1.3); opacity: 1; text-shadow: 0 0 10px #b19470; }
-          100% { transform: scale(1); opacity: 0.4; text-shadow: 0 0 0px #b19470; }
-        }
-
-        @media (max-width: 768px) {
-          .places-header h2 { font-size: 2.2rem; }
-          .gold-divider::before, .gold-divider::after { width: 50px; }
+          font-weight: 400;
         }
 
         .places-track {
@@ -148,20 +136,14 @@ const Places = () => {
           height: 400px; 
           border-radius: 15px; 
           overflow: hidden; 
-          border: 1px solid rgba(177, 148, 112, 0.2); 
+          border: 1px solid rgba(139, 110, 64, 0.2); 
           box-shadow: 0 10px 20px rgba(0,0,0,0.05);
           transition: all 0.5s ease;
         }
 
         .place-card:hover { 
-          border-color: #b19470;
-          box-shadow: 0 15px 30px rgba(177, 148, 112, 0.2);
-        }
-
-        .place-img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+          border-color: #8b6e40;
+          box-shadow: 0 15px 30px rgba(139, 110, 64, 0.2);
         }
 
         .distance-tag { 
@@ -175,7 +157,7 @@ const Places = () => {
           font-weight: 700; 
           color: #1a1a1a; 
           z-index: 5; 
-          border: 1px solid #c59252;
+          border: 1px solid #8b6e40;
         }
 
         .place-overlay { 
@@ -184,16 +166,17 @@ const Places = () => {
           left: 0; 
           width: 100%; 
           padding: 20px; 
-          background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%); 
+          background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 100%); 
           color: white; 
           z-index: 2;
         }
 
         .place-overlay h4 { 
           font-size: 18px; 
-          font-weight: 500; 
+          font-weight: 600; 
           margin: 0; 
           letter-spacing: 1px; 
+          color: white;
         }
       `}</style>
 
@@ -208,7 +191,7 @@ const Places = () => {
             </h2>
 
             <div className="gold-divider">
-              <i className="ri-shining-2-fill"></i>
+              <i className="ri-shining-2-fill" aria-hidden="true"></i>
             </div>
 
             <p className="description">
@@ -231,20 +214,20 @@ const Places = () => {
                     <div className="place-card">
 
                       <div className="distance-tag">
-                        <i className="ri-map-pin-2-fill"></i> {place.dist}
+                        <i className="ri-map-pin-2-fill" aria-hidden="true"></i> {place.dist}
                       </div>
 
                       <Image
                         src={place.img}
-                        alt={place.title}
-                        width={400}
-                        height={400}
-                        className="place-img"
+                        alt={`Visit ${place.title} near Hotel Ananta Inn Jaipur`}
+                        fill
+                        sizes="300px"
+                        style={{ objectFit: "cover" }}
                       />
 
                       <div className="place-overlay">
                         <h4>{place.title}</h4>
-                        <p className="place-info">{place.desc}</p>
+                        <p style={{ fontSize: "12px", opacity: 0.9, margin: 0 }}>{place.desc}</p>
                       </div>
 
                     </div>

@@ -46,7 +46,7 @@ const Navbar = () => {
             style={{ marginRight: "10px" }}
           />
           <div>
-            <div className="text-muted" style={{ fontSize: "14px" }}>
+            <div style={{ fontSize: "14px", color: "#444", fontWeight: "700" }}>
               HOTEL ANANTA INN
             </div>
           </div>
@@ -57,8 +57,10 @@ const Navbar = () => {
           className={`navbar-toggler ${styles.customToggler}`}
           type="button"
           onClick={toggleMenu}
+          aria-expanded={isOpen}
+          aria-controls="navbarNav"
           aria-label="Toggle navigation"
-          style={{ padding: "5px 10px" }}
+          style={{ padding: "8px 12px", minWidth: "44px", minHeight: "44px" }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -66,6 +68,7 @@ const Navbar = () => {
         {/* Navbar Links */}
         <div
           className={`navbar-collapse ${isOpen ? "d-block" : "d-none"} d-lg-flex`}
+          id="navbarNav"
           style={{ transition: "all 0.3s ease" }}
         >
           <ul className="navbar-nav mx-auto text-center mt-3 mt-lg-0">
